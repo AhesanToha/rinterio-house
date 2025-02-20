@@ -16,6 +16,7 @@
                 extend: {
                     colors: {
                         'logo-primary-bg': "#ABEF5F",
+                        'logo-primary-bg-light': "rgba(171, 239, 95, 0.5)",
                     },
                 },
             },
@@ -43,10 +44,10 @@
 
 <body class="font-manrope">
     <!-- Header section -->
-    <header> 
+    <header class="max-w-screen-xl mx-auto">
         <!-- Navbar -->
-        <nav class="max-w-screen-xl mx-auto">
-            <div class="navbar bg-base-900 ">
+        <nav>
+            <div class="navbar bg-base-100 ">
                 <div class="navbar-start ">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -90,8 +91,27 @@
             </div>
         </nav>
 
-        <!-- Hero section -->   
-         
+        <!-- Hero section -->
+        <div class="hero min-h-screen">
+            <div class="hero-overlay bg-white"></div>
+            <div class="hero-content text-center">
+                <div class="">
+                    <img class="mx-auto" src="assets/banner.png" alt="">
+                    <h1 class="mb-5 text-3xl lg:text-6xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+                    <p class="mb-5 font-medium text-gray-500">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek
+                        metal <br> accents, and large windows that flood the space with natural light.
+                    </p>
+                    <button>
+                        <a class="btn bg-logo-primary-bg-light font-bold text-lg rounded-3xl px-4">Book Consult <i
+                                class="fa-solid fa-arrow-right  w-8 h-8 inline-flex bg-logo-primary-bg text-white justify-center items-center rounded-full "
+                                style="transform: rotate(-45deg);"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Main section -->
     <main>
